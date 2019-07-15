@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm start' 
+                sh 'docker run -it -p 3001:9001 docker-test-1' 
             }
         }
     }
