@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                sh 'docker run -it -p 3003:9003 docker-test-3' 
+                sh 'docker run -it -p 3003:9001 docker-test-3' 
             }
         }
     }
