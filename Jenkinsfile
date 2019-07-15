@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'docker run -it -p 3001:9001 docker-test-1' 
+                sh 'docker run -it -p 3001:9001 docker-test-1:latest' 
             }
         }
     }
